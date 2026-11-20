@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Static fallback palette, used by RemoteViews (which cannot read the
+         Compose Material3 theme) and as the non-dynamic-color fallback below
+         Android 12. Compose UI prefers dynamic color when available. -->
+    <color name="home_primary">#1F6FEB</color>
+    <color name="home_on_primary">#FFFFFF</color>
+    <color name="home_surface">#FFFFFF</color>
+    <color name="home_on_surface">#1C1B1F</color>
+    <color name="home_on_surface_variant">#49454F</color>
+    <color name="home_surface_container">#F2F2F5</color>
+    <color name="home_outline">#DDDDE3</color>
+    <color name="home_scrim">#66000000</color>
+</resources>

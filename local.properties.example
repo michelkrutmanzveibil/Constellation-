@@ -1,0 +1,26 @@
+# Copy this file to local.properties (which is git-ignored) and fill in the
+# keys you have. Every key is optional — Home is designed to degrade
+# gracefully to "Open <App> ->" whenever a key is missing, expired, or the
+# underlying call fails. No provider ever fabricates data it doesn't have.
+#
+# sdk.dir is normally written by Android Studio automatically.
+sdk.dir=/path/to/Android/sdk
+
+# Google Places API (New) - https://developers.google.com/maps/documentation/places/web-service/text-search
+# Used by the Maps provider for "Top 5 nearby places".
+HOME_MAPS_API_KEY=
+
+# Spotify Web API - https://developer.spotify.com/documentation/web-api
+# Client Credentials flow (app-only auth, no user login needed for search).
+# Create an app at https://developer.spotify.com/dashboard to get these.
+HOME_SPOTIFY_CLIENT_ID=
+HOME_SPOTIFY_CLIENT_SECRET=
+
+# YouTube Data API v3 - https://developers.google.com/youtube/v3/getting-started
+HOME_YOUTUBE_API_KEY=
+
+# OpenAI API - https://platform.openai.com/api-keys
+# Used for the ChatGPT provider's inline short answer. Bring-your-own-key;
+# billed to your own OpenAI account. Without it, the provider skips straight
+# to "Open ChatGPT ->" with the query preserved.
+HOME_OPENAI_API_KEY=

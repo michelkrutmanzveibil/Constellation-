@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Home" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:statusBarColor">@color/home_surface</item>
+        <item name="android:windowBackground">@color/home_surface</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <!-- WidgetHostActivity's theme: a transparent, chrome-less window so the
+         activity reads as "the widget itself", not a new screen. -->
+    <style name="Theme.Home.Transparent" parent="Theme.Home">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowAnimationStyle">@style/WidgetHostActivityAnimation</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <style name="WidgetHostActivityAnimation" parent="android:Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/widget_host_enter</item>
+        <item name="android:activityOpenExitAnimation">@anim/widget_host_stay</item>
+        <item name="android:activityCloseEnterAnimation">@anim/widget_host_stay</item>
+        <item name="android:activityCloseExitAnimation">@anim/widget_host_exit</item>
+    </style>
+</resources>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/widget_card_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <TextView
+            android:id="@+id/widget_search_bar"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/widget_search_pill_background"
+            android:drawableStart="@drawable/ic_search"
+            android:drawablePadding="10dp"
+            android:drawableTint="@color/home_on_surface_variant"
+            android:gravity="center_vertical"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:text="@string/widget_search_hint"
+            android:textColor="@color/home_on_surface_variant"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:id="@+id/widget_icon_row"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            android:weightSum="5">
+
+            <ImageView
+                android:id="@+id/widget_icon_0"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:scaleType="fitCenter" />
+
+            <ImageView
+                android:id="@+id/widget_icon_1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:scaleType="fitCenter" />
+
+            <ImageView
+                android:id="@+id/widget_icon_2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:scaleType="fitCenter" />
+
+            <ImageView
+                android:id="@+id/widget_icon_3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:scaleType="fitCenter" />
+
+            <ImageView
+                android:id="@+id/widget_icon_4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:scaleType="fitCenter" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>
